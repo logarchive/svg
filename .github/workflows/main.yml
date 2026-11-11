@@ -19,7 +19,7 @@ jobs:
 
       - name: Run Wakaru on bundle
         run: |
-          npx wakaru/cli@latest b/assets/bundle-2xkbiu9u.js --unpack -o decompiled/
+          npx @wakaru/cli@latest b/assets/bundle-2xkbiu9u.js --unpack -o decompiled/
 
       - name: Upload decompiled artifact
         uses: actions/upload-artifact@v4
