@@ -4317,8 +4317,8 @@ ${I}:`;
             });
         }
         lj = "fern";
-        Ni = "cherri";
-        yt = "Cherri";
+        Ni = "log";
+        yt = "Log";
         aY = "session_token";
         ki = "cherri:me";
         fw = new Map;
