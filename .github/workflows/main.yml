@@ -17,9 +17,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install Wakaru CLI
+        run: npm install -g @wakaru/cli
+
       - name: Run Wakaru on bundle
-        run: |
-          npx --package=@wakaru/cli wakaru b/assets/bundle-2xkbiu9u.js --unpack -o decompiled/
+        run: wakaru b/assets/bundle-2xkbiu9u.js --unpack -o decompiled/
 
       - name: Upload decompiled artifact
         uses: actions/upload-artifact@v4
